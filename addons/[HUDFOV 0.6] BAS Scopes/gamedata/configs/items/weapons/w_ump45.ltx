@@ -50,9 +50,9 @@ flame_particles                          = weapons\generic_weapon05
 smoke_particles                          = weapons\generic_shoot_00
 grenade_flame_particles                  = weapons\generic_weapon01
 
-shell_point					             = 0.0, 0.188, 0.082
-shell_dir					             = 0.0, 1.0, 0.0
-shell_particles	 			             = weapons\45acp
+; shell_point					             = 0.0, 0.188, 0.082
+; shell_dir					             = 0.0, 1.0, 0.0
+; shell_particles	 			             = weapons\45acp
 
 light_disabled                           = false
 light_color                              = 0.6, 0.5, 0.3
@@ -396,6 +396,8 @@ aim_hud_offset_rot_16x9                  = 0.021, -0.00036, 0
 
 aim_hud_offset_alt_pos_16x9				= -0.08068, -0.086668, 0.05
 aim_hud_offset_alt_rot_16x9				= -0.072471, 0.04348, 0.710188
+
+anm_hide                                 = ump_holster_scope, idle
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_aimpoint]:wpn_ump45
 1icon_layer			    = aimpoint
@@ -432,9 +434,9 @@ visual                                   = dynamics\weapons\wpn_ump45\wpn_ump45.
 item_visual                              = anomaly_weapons\wpn_ump45\wpn_ump45_aimpoint_pro_hud.ogf
 
 aim_hud_offset_pos		                 = -0.053, 0.001, -0.04
-aim_hud_offset_pos_16x9                  = -0.053, -0.04129, -0.04
+aim_hud_offset_pos_16x9                  = -0.05268, -0.00399, -0.04
 aim_hud_offset_rot		                 = 0.021, -0.00036, 0
-aim_hud_offset_rot_16x9                  = 0.00627, -0.00212, 0
+aim_hud_offset_rot_16x9                  = 0.007548, -0.00228, 0
 
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_e0t2]:wpn_ump45
@@ -534,9 +536,10 @@ visual                                   = dynamics\weapons\wpn_ump45\wpn_ump45.
 item_visual                              = anomaly_weapons\wpn_ump45\wpn_ump45_compm4s_hud.ogf
 
 aim_hud_offset_pos		                 = -0.053, 0.001, -0.04
-aim_hud_offset_pos_16x9                  = -0.053, 0.02704, -0.04
+aim_hud_offset_pos_16x9                  = -0.053, 0.002704, -0.04
 aim_hud_offset_rot		                 = 0.021, -0.00036, 0
 aim_hud_offset_rot_16x9                  = 0.008646, -0.00028, 0
+
 
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_rakurs]:wpn_ump45
@@ -588,6 +591,8 @@ aim_hud_offset_rot_16x9                  = 0.021, -0.00036, 0
 aim_hud_offset_alt_pos_16x9				= -0.08068, -0.086668, 0.05
 aim_hud_offset_alt_rot_16x9				= -0.072471, 0.04348, 0.710188
 
+anm_hide                                 = ump_holster_scope, idle
+
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_kemper]:wpn_ump45
 1icon_layer			    = kemper
@@ -637,8 +642,11 @@ aim_hud_offset_pos_16x9                  = -0.053, 0.001, -0.04
 aim_hud_offset_rot		                 = 0.021, -0.00036, 0
 aim_hud_offset_rot_16x9                  = 0.021, -0.00036, 0
 
-im_hud_offset_alt_pos_16x9				= -0.016488, 0.019605, 0.0
-aim_hud_offset_alt_rot_16x9				= -0.01436, 0.00716, -0.440968
+aim_hud_offset_alt_pos_16x9				= -0.01424, 0.01857, 0.0
+aim_hud_offset_alt_rot_16x9				= -0.016709, 0.00108, -0.440968
+
+anm_hide                                 = ump_holster_scope, idle
+
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_mepro]:wpn_ump45
 1icon_layer			    = mepro
@@ -922,6 +930,9 @@ aim_hud_offset_rot_16x9                  = 0.021, -0.00036, 0
 
 aim_hud_offset_alt_pos_16x9				= -0.08068, -0.086668, 0.05
 aim_hud_offset_alt_rot_16x9				= -0.072471, 0.04348, 0.710188
+
+anm_hide                                 = ump_grip_holster_scope, idle
+
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_custom_aimpoint]:wpn_ump45_custom
 1icon_layer			    = aimpoint
@@ -958,9 +969,9 @@ visual                                   = dynamics\weapons\wpn_ump45\wpn_ump45_
 item_visual                              = anomaly_weapons\wpn_ump45\wpn_ump45_sk1_aimpoint_pro_hud.ogf
 
 aim_hud_offset_pos		                 = -0.053, 0.001, -0.04
-aim_hud_offset_pos_16x9                  = -0.053, -0.04129, -0.04
+aim_hud_offset_pos_16x9                  = -0.05268, -0.00399, -0.04
 aim_hud_offset_rot		                 = 0.021, -0.00036, 0
-aim_hud_offset_rot_16x9                  = 0.00627, -0.00212, 0
+aim_hud_offset_rot_16x9                  = 0.007548, -0.00228, 0
 
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_custom_e0t2]:wpn_ump45_custom
@@ -1060,9 +1071,10 @@ visual                                   = dynamics\weapons\wpn_ump45\wpn_ump45_
 item_visual                              = anomaly_weapons\wpn_ump45\wpn_ump45_sk1_compm4s_hud.ogf
 
 aim_hud_offset_pos		                 = -0.053, 0.001, -0.04
-aim_hud_offset_pos_16x9                  = -0.053, 0.02704, -0.04
+aim_hud_offset_pos_16x9                  = -0.053, 0.002704, -0.04
 aim_hud_offset_rot		                 = 0.021, -0.00036, 0
 aim_hud_offset_rot_16x9                  = 0.008646, -0.00028, 0
+
 
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_custom_rakurs]:wpn_ump45_custom
@@ -1114,6 +1126,8 @@ aim_hud_offset_rot_16x9                  = 0.021, -0.00036, 0
 aim_hud_offset_alt_pos_16x9				= -0.08068, -0.086668, 0.05
 aim_hud_offset_alt_rot_16x9				= -0.072471, 0.04348, 0.710188
 
+anm_hide                                 = ump_grip_holster_scope, idle
+
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_custom_kemper]:wpn_ump45_custom
 1icon_layer			    = kemper
@@ -1163,8 +1177,11 @@ aim_hud_offset_pos_16x9                  = -0.053, 0.001, -0.04
 aim_hud_offset_rot		                 = 0.021, -0.00036, 0
 aim_hud_offset_rot_16x9                  = 0.021, -0.00036, 0
 
-im_hud_offset_alt_pos_16x9				= -0.016488, 0.019605, 0.0
-aim_hud_offset_alt_rot_16x9				= -0.01436, 0.00716, -0.440968
+aim_hud_offset_alt_pos_16x9				= -0.01424, 0.01857, 0.0
+aim_hud_offset_alt_rot_16x9				= -0.016709, 0.00108, -0.440968
+
+anm_hide                                 = ump_grip_holster_scope, idle
+
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_custom_mepro]:wpn_ump45_custom
 1icon_layer			    = mepro
