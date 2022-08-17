@@ -1,4 +1,4 @@
-;------------------------------------------------------------------------------------------------
+; 0.4 bas------------------------------------------------------------------------------------------------
 [wpn_ump45]:identity_immunities,weapon_probability,default_weapon_params,wpn_ump45_sounds
 GroupControlSection                      = spawn_group
 $npc                                     = on
@@ -163,10 +163,11 @@ kill_msg_y                               = 123
 kill_msg_width                           = 69
 kill_msg_height                          = 30
 
-
+snd_draw                = weapons\wpn_ump_new\ump_new_draw
+snd_holster             = weapons\wpn_ump_new\ump_new_holster
 snd_reload_misfire		= weapons\wpn_ump_new\ump_new_unjam
-snd_reload_empty		= weapons\wpn_ump_new\ump_new_reload_empty
-snd_reload				= weapons\wpn_ump_new\ump_new_reload
+snd_reload_empty		= weapons\wpn_ump_new\ump_sk0_new_reload_empty
+snd_reload				= weapons\wpn_ump_new\ump_sk0_new_reload
 snd_bore				= weapons\wpn_ump_new\ump_new_inspect
 snd_switch_mode				= weapons\wpn_ump_new\ump_new_switch_mode
 
@@ -339,6 +340,9 @@ misfire_end_prob                         = 0.08
 
 condition_queue_shot_dec                 = 0.00082
 condition_shot_dec                       = 0.00082
+
+snd_reload_empty		= weapons\wpn_ump_new\ump_new_reload_empty
+snd_reload				= weapons\wpn_ump_new\ump_new_reload
 
 
 [wpn_ump45_sk1_hud]:wpn_ump45_hud

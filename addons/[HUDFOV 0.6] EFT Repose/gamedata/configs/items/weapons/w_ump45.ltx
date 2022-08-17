@@ -1,4 +1,4 @@
-;------------------------------------------------------------------------------------------------
+;0.6 vanilla------------------------------------------------------------------------------------------------
 [wpn_ump45]:identity_immunities,weapon_probability,default_weapon_params,wpn_ump45_sounds
 GroupControlSection                      = spawn_group
 $npc                                     = on
@@ -163,10 +163,11 @@ kill_msg_y                               = 123
 kill_msg_width                           = 69
 kill_msg_height                          = 30
 
-
+snd_draw                = weapons\wpn_ump_new\ump_new_draw
+snd_holster             = weapons\wpn_ump_new\ump_new_holster
 snd_reload_misfire		= weapons\wpn_ump_new\ump_new_unjam
-snd_reload_empty		= weapons\wpn_ump_new\ump_new_reload_empty
-snd_reload				= weapons\wpn_ump_new\ump_new_reload
+snd_reload_empty		= weapons\wpn_ump_new\ump_sk0_new_reload_empty
+snd_reload				= weapons\wpn_ump_new\ump_sk0_new_reload
 snd_bore				= weapons\wpn_ump_new\ump_new_inspect
 snd_switch_mode				= weapons\wpn_ump_new\ump_new_switch_mode
 
@@ -178,20 +179,25 @@ zoom_hide_crosshair                      = true
 item_position                            = 0, 0, 0
 item_orientation                         = 0, 0, 0
 
-hands_position                     = -0.1,-0.15,-0.1
-hands_position_16x9                      = 0.066, -0.155, 0.325
-hands_orientation                   = 0,0,0
-hands_orientation_16x9                   = 0,0,0
+hands_position		                     = 0.066, -0.15, 0.2
+hands_position_16x9                      = 0.066, -0.15, 0.2
+hands_orientation		                 = 0, 0.3, 0
+hands_orientation_16x9                   = 0, 0.3, 0
 
-aim_hud_offset_pos                  = -0.0527,0.0022,0.0
-aim_hud_offset_pos_16x9                  = -0.0527,0.022,-0.066
-aim_hud_offset_rot                 = -0.01,0.0,0
-aim_hud_offset_rot_16x9                  = -0.01,-0.001,0.0
+aim_hud_offset_pos		                 = -0.05287, 0.01796, -0.02
+aim_hud_offset_pos_16x9                  = -0.05287, 0.01796, -0.02
+aim_hud_offset_rot		                 = -0.007, -0.00036, 0
+aim_hud_offset_rot_16x9                  = -0.007, -0.00036, 0
 
 gl_hud_offset_pos                        = 0, 0, 0
 gl_hud_offset_pos_16x9                   = 0, 0, 0
 gl_hud_offset_rot                        = 0, 0, 0
 gl_hud_offset_rot_16x9                   = 0, 0, 0
+
+lowered_hud_offset_pos					 = 0.075, -0.02, -0.02
+lowered_hud_offset_pos_16x9				 = 0.075, -0.02, -0.02
+lowered_hud_offset_rot					 = -0.075, -0.63, 0.4
+lowered_hud_offset_rot_16x9				 = -0.075, -0.63, 0.4
 
 lean_hud_offset_pos                      = 0, 0, 0
 lean_hud_offset_rot                      = 0, 0, 0
@@ -229,7 +235,7 @@ freelook_z_offset_mul					 = 0.1
 [wpn_ump45_ac10632]:wpn_ump45
 inv_grid_x                               = 12
 inv_grid_y                               = 0
-											  
+
 
 inv_weight                               = 2.60
 
@@ -240,10 +246,10 @@ visual                                   = dynamics\weapons\wpn_ump45\wpn_ump45_
 [wpn_ump45_ac10632_hud]:wpn_ump45_hud
 item_visual                              = anomaly_weapons\wpn_ump45\wpn_ump45_ac10632_hud.ogf
 
-aim_hud_offset_pos		                 = -0.0525,0.0233,0.0
-aim_hud_offset_rot		                 = -0.01,-0.001,0.0
-aim_hud_offset_pos_16x9                  = -0.0525,0.005,0.0
-aim_hud_offset_rot_16x9                  = -0.01,-0.001,0.0
+aim_hud_offset_pos		                 = -0.05287, 0.0078, -0.02
+aim_hud_offset_pos_16x9                  = -0.05287, 0.0078, -0.02
+aim_hud_offset_rot		                 = 0.012, -0.00036, 0
+aim_hud_offset_rot_16x9                  = 0.012, -0.00036, 0
 
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_acog]:wpn_ump45
@@ -264,15 +270,15 @@ zoom_rotate_time                         = 0.25
 [wpn_ump45_acog_hud]:wpn_ump45_hud,hud_low_interia
 item_visual                              = anomaly_weapons\wpn_ump45\wpn_ump45_acog_hud.ogf
 
-aim_hud_offset_pos		                 = -0.0525,0.0233,0.0
-aim_hud_offset_rot		                 = -0.01,-0.001,0.0
-aim_hud_offset_pos_16x9                  = -0.05237,0.0035,0.0
-aim_hud_offset_rot_16x9                  = -0.01,-0.001,0.0
+aim_hud_offset_pos		                 = -0.0522, 0.0041, -0.145
+aim_hud_offset_pos_16x9                  = -0.0522, 0.0041, -0.145
+aim_hud_offset_rot		                 = 0.0152, -0.003, 0
+aim_hud_offset_rot_16x9                  = 0.0152, -0.003, 0
 
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_eot]:wpn_ump45
 inv_grid_x                               = 4
-inv_grid_y                               = 0				 
+inv_grid_y                               = 0
 
 inv_weight                               = 2.85
 
@@ -283,11 +289,10 @@ visual                                   = dynamics\weapons\wpn_ump45\wpn_ump45_
 [wpn_ump45_eot_hud]:wpn_ump45_hud
 item_visual                              = anomaly_weapons\wpn_ump45\wpn_ump45_eot_hud.ogf
 
-aim_hud_offset_pos		                 = -0.0525,0.0233,0.0
-aim_hud_offset_rot		                 = -0.01,-0.001,0.0
-aim_hud_offset_pos_16x9                  = -0.0525,-0.0015,0.0
-aim_hud_offset_rot_16x9                  = -0.01,-0.001,0.0
-
+aim_hud_offset_pos		                 = -0.053, 0.001, -0.04
+aim_hud_offset_pos_16x9                  = -0.053, 0.001, -0.04
+aim_hud_offset_rot		                 = 0.021, -0.00036, 0
+aim_hud_offset_rot_16x9                  = 0.021, -0.00036, 0
 
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_custom]:wpn_ump45
@@ -295,6 +300,7 @@ parent_section                           = wpn_ump45_custom
 
 inv_grid_x                               = 0
 inv_grid_y                               = 4
+
 inv_name                                 = st_wpn_ump45_custom
 inv_name_short                           = st_wpn_ump45_custom
 
@@ -335,6 +341,9 @@ misfire_end_prob                         = 0.08
 condition_queue_shot_dec                 = 0.00082
 condition_shot_dec                       = 0.00082
 
+snd_reload_empty		= weapons\wpn_ump_new\ump_new_reload_empty
+snd_reload				= weapons\wpn_ump_new\ump_new_reload
+
 
 [wpn_ump45_sk1_hud]:wpn_ump45_hud
 item_visual                              = anomaly_weapons\wpn_ump45\wpn_ump45_sk1_hud.ogf
@@ -373,12 +382,12 @@ visual                                   = dynamics\weapons\wpn_ump45\wpn_ump45_
 [wpn_ump45_ac10632_sk1_hud]:wpn_ump45_sk1_hud
 item_visual                              = anomaly_weapons\wpn_ump45\wpn_ump45_ac10632_sk1_hud.ogf
 
-aim_hud_offset_pos		                 = -0.0525,0.0233,0.0
-aim_hud_offset_rot		                 = -0.01,-0.001,0.0
-aim_hud_offset_pos_16x9                  = -0.0525,0.005,0.0
-aim_hud_offset_rot_16x9                  = -0.01,-0.001,0.0
-;------------------------------------------------------------------------------------------------
+aim_hud_offset_pos		                 = -0.05287, 0.0078, -0.02
+aim_hud_offset_pos_16x9                  = -0.05287, 0.0078, -0.02
+aim_hud_offset_rot		                 = 0.012, -0.00036, 0
+aim_hud_offset_rot_16x9                  = 0.012, -0.00036, 0
 
+;------------------------------------------------------------------------------------------------
 [wpn_ump45_custom_acog]:wpn_ump45_custom
 inv_grid_x                               = 8
 inv_grid_y                               = 4
@@ -396,16 +405,15 @@ zoom_rotate_time                         = 0.25
 [wpn_ump45_acog_sk1_hud]:wpn_ump45_sk1_hud,hud_low_interia
 item_visual                              = anomaly_weapons\wpn_ump45\wpn_ump45_acog_sk1_hud.ogf
 
-aim_hud_offset_pos		                 = -0.0525,0.0233,0.0
-aim_hud_offset_rot		                 = -0.01,-0.001,0.0
-aim_hud_offset_pos_16x9                  = -0.05237,0.0035,0.0
-aim_hud_offset_rot_16x9                  = -0.01,-0.001,0.0
+aim_hud_offset_pos		                 = -0.0522, 0.0041, -0.145
+aim_hud_offset_pos_16x9                  = -0.0522, 0.0041, -0.145
+aim_hud_offset_rot		                 = 0.0152, -0.003, 0
+aim_hud_offset_rot_16x9                  = 0.0152, -0.003, 0
 
 ;------------------------------------------------------------------------------------------------
 [wpn_ump45_custom_eot]:wpn_ump45_custom
 inv_grid_x                               = 4
 inv_grid_y                               = 4
-											 
 
 inv_weight                               = 2.85
 
@@ -416,8 +424,7 @@ visual                                   = dynamics\weapons\wpn_ump45\wpn_ump45_
 [wpn_ump45_eot_sk1_hud]:wpn_ump45_sk1_hud
 item_visual                              = anomaly_weapons\wpn_ump45\wpn_ump45_eot_sk1_hud.ogf
 
-aim_hud_offset_pos		                 = -0.0525,0.0233,0.0
-aim_hud_offset_rot		                 = -0.01,-0.001,0.0
-aim_hud_offset_pos_16x9                  = -0.0525,-0.0015,0.0
-aim_hud_offset_rot_16x9                  = -0.01,-0.001,0.0
-
+aim_hud_offset_pos		                 = -0.053, 0.001, -0.04
+aim_hud_offset_pos_16x9                  = -0.053, 0.001, -0.04
+aim_hud_offset_rot		                 = 0.021, -0.00036, 0
+aim_hud_offset_rot_16x9                  = 0.021, -0.00036, 0
